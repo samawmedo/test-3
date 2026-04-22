@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Youssef & Nour</title>
+    <meta
+      name="description"
+      content="Join us in celebrating our wedding day. View the timeline, route, and share your wishes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero reveal">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="eyebrow">In the Name of Allah</p>
+        <h1>Youssef & Nour</h1>
+        <p class="subtitle">Together with our families, we invite you to celebrate our wedding</p>
+        <a href="#timeline" class="btn btn--gold">View Invitation</a>
+      </div>
+      <div class="hero-controls">
+        <button id="themeToggle" class="music-toggle" aria-label="Toggle light and dark mode">
+          <span id="themeState">Dark Mode</span>
+        </button>
+        <button id="musicToggle" class="music-toggle" aria-label="Toggle background music">
+          <span id="musicState">Music: Off</span>
+        </button>
+      </div>
+      <audio id="bgMusic" loop preload="auto">
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_8f2638f8c7.mp3?filename=wedding-ambient-piano-110624.mp3" type="audio/mpeg" />
+      </audio>
+    </header>
+
+    <main>
+      <section id="countdownSection" class="section reveal">
+        <h2>Countdown to Our Wedding</h2>
+        <div id="countdown" class="countdown">
+          <div class="time-box"><span id="days">00</span><small>Days</small></div>
+          <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+          <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section reveal">
+        <h2>Event Timeline</h2>
+        <div class="timeline-grid">
+          <article class="event-card">
+            <h3>Katb el-Kitab</h3>
+            <p class="event-meta">Thursday, 12 June 2026 · 6:00 PM</p>
+            <p>Al Noor Mosque Hall</p>
+            <a href="https://maps.google.com/?q=Al+Noor+Mosque" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            <a href="#katb-section">View Full Details</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Bride's Henna</h3>
+            <p class="event-meta">Friday, 19 June 2026 · 8:00 PM</p>
+            <p>Family Home Garden</p>
+            <a href="https://maps.google.com/?q=Family+Home+Garden" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            <a href="#bride-henna-section">View Full Details</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Groom's Henna</h3>
+            <p class="event-meta">Saturday, 20 June 2026 · 8:30 PM</p>
+            <p>Al Zahra Lounge</p>
+            <a href="https://maps.google.com/?q=Al+Zahra+Lounge" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            <a href="#groom-henna-section">View Full Details</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Wedding Ceremony</h3>
+            <p class="event-meta">Sunday, 21 June 2026 · 9:00 PM</p>
+            <p>Royal Palace Hall</p>
+            <a href="https://maps.google.com/?q=Royal+Palace+Hall" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            <a href="#wedding-section">View Full Details</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="story" class="section reveal">
+        <h2>Our Story</h2>
+        <p class="section-text">
+          From a simple first conversation to a lifetime promise, every step brought us closer.
+          This day is the beginning of our forever, and your presence completes our joy.
+        </p>
+      </section>
+
+      <section id="location-details" class="section reveal">
+        <h2>Location Details</h2>
+        <div class="detail-grid">
+          <article id="katb-section" class="detail-card">
+            <h3>Katb el-Kitab</h3>
+            <p><strong>Date & Time:</strong> Thursday, 12 June 2026 · 6:00 PM</p>
+            <p><strong>Venue:</strong> Al Noor Mosque Hall</p>
+            <p>Add parking notes, hall entrance details, and seating instructions here.</p>
+          </article>
+
+          <article id="bride-henna-section" class="detail-card">
+            <h3>Bride's Henna</h3>
+            <p><strong>Date & Time:</strong> Friday, 19 June 2026 · 8:00 PM</p>
+            <p><strong>Venue:</strong> Family Home Garden</p>
+            <p>Add dress code, special schedule, and any family-specific information here.</p>
+          </article>
+
+          <article id="groom-henna-section" class="detail-card">
+            <h3>Groom's Henna</h3>
+            <p><strong>Date & Time:</strong> Saturday, 20 June 2026 · 8:30 PM</p>
+            <p><strong>Venue:</strong> Al Zahra Lounge</p>
+            <p>Add meetup point, transport timing, and music program details here.</p>
+          </article>
+
+          <article id="wedding-section" class="detail-card">
+            <h3>Wedding Ceremony</h3>
+            <p><strong>Date & Time:</strong> Sunday, 21 June 2026 · 9:00 PM</p>
+            <p><strong>Venue:</strong> Royal Palace Hall</p>
+            <p>Add table map, entrance gate details, and ceremony sequence here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="zaffah" class="section reveal">
+        <h2>Zaffah Route</h2>
+        <p class="section-text">A hand-drawn style guide to the joyful route of our wedding parade.</p>
+        <div class="sketch-map">
+          <div class="point point--start">
+            <span>Start</span>
+            <small>Bride House</small>
+          </div>
+          <div class="path path--1"></div>
+          <div class="point point--middle">
+            <span>Stop</span>
+            <small>Main Square</small>
+          </div>
+          <div class="path path--2"></div>
+          <div class="point point--end">
+            <span>Final</span>
+            <small>Royal Hall</small>
+          </div>
+          <div class="sketch-note">Follow the lanterns and joyful drums ✨</div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <h2>Media Gallery</h2>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80" alt="Wedding flowers" class="gallery-item" />
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding rings" class="gallery-item" />
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="Bride bouquet" class="gallery-item" />
+          <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=900&q=80" alt="Wedding setup" class="gallery-item" />
+          <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=900&q=80" alt="Table setup" class="gallery-item" />
+          <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=900&q=80" alt="Romantic lights" class="gallery-item" />
+        </div>
+      </section>
+
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button id="lightboxClose" class="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightboxImage" src="" alt="Expanded gallery image" />
+      </div>
+
+      <section id="message" class="section reveal">
+        <h2>Leave Us a Message</h2>
+        <p class="section-text">We would love to read your warm wishes.</p>
+        <form id="messageForm" class="message-form">
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
+          <textarea name="message" id="messageInput" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn--gold">Send Message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="qr" class="section reveal">
+        <h2>Share This Invitation</h2>
+        <p class="section-text">Scan or download the QR code to open this invitation page.</p>
+        <div class="qr-wrap">
+          <div id="qrcode"></div>
+          <button id="downloadQr" class="btn btn--outline">Download QR Code</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>With love, Youssef & Nour • 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
